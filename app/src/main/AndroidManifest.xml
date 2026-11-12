@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <queries>
+        <intent>
+            <action android:name="android.media.browse.MediaBrowserService" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.APP_MUSIC" />
+        </intent>
+        <package android:name="com.spotify.music" />
+        <package android:name="com.google.android.apps.youtube.music" />
+        <package android:name="com.apple.android.music" />
+        <package android:name="ru.yandex.music" />
+        <package android:name="com.soundcloud.android" />
+        <package android:name="deezer.android.app" />
+    </queries>
+
+    <application
+        android:name=".ToneFormApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MyApplication">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".media.MusicMediaListenerService"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <!-- Widget 1: Vinyl Bloom -->
+        <receiver
+            android:name=".widgets.VinylBloomWidgetReceiver"
+            android:exported="false"
+            android:label="@string/widget_vinyl_bloom_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_vinyl_bloom_info" />
+        </receiver>
+
+        <!-- Widget 2: Pill Deck -->
+        <receiver
+            android:name=".widgets.PillDeckWidgetReceiver"
+            android:exported="false"
+            android:label="@string/widget_pill_deck_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_pill_deck_info" />
+        </receiver>
+
+        <!-- Widget 3: Clover Control -->
+        <receiver
+            android:name=".widgets.CloverControlWidgetReceiver"
+            android:exported="false"
+            android:label="@string/widget_clover_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_clover_control_info" />
+        </receiver>
+
+        <!-- Widget 4: Wave Bar -->
+        <receiver
+            android:name=".widgets.WaveBarWidgetReceiver"
+            android:exported="false"
+            android:label="@string/widget_wave_bar_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_wave_bar_info" />
+        </receiver>
+
+    </application>
+
+</manifest>

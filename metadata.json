@@ -1,0 +1,6 @@
+{
+  "name": "ToneForm",
+  "description": "Material 3 Expressive music widgets for Pixel with dynamic wallpaper & album-art adaptation and live MediaSession sync.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

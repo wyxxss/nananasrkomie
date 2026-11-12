@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ToneForm</string>
+
+    <!-- Widget names & descriptions -->
+    <string name="widget_vinyl_bloom_name">Винил-цветок</string>
+    <string name="widget_vinyl_bloom_desc">Выразительный музыкальный виджет с виниловой обложкой и адаптацией под обои Pixel</string>
+    <string name="widget_pill_deck_name">Экспрессив-дека</string>
+    <string name="widget_pill_deck_desc">Асимметричный виджет Material You 3 Expressive с прогрессом и управлением</string>
+    <string name="widget_clover_name">Клевер-студия</string>
+    <string name="widget_clover_desc">Фигурный виджет-печенька в стиле Material 3 Expressive для быстрого управления</string>
+    <string name="widget_wave_bar_name">Волновой бар</string>
+    <string name="widget_wave_bar_desc">Компактная капсула-плеер с волновой графикой и цветами ваших обоев</string>
+
+    <!-- Accessibility / Content Descriptions -->
+    <string name="cd_play_pause">Воспроизведение или пауза</string>
+    <string name="cd_skip_next">Следующий трек</string>
+    <string name="cd_skip_prev">Предыдущий трек</string>
+    <string name="cd_open_player">Открыть музыкальное приложение</string>
+    <string name="cd_cycle_style">Переключить цветовой режим</string>
+    <string name="cd_album_art">Обложка трека</string>
+</resources>

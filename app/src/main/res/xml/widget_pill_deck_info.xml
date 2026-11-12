@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/widget_pill_deck_desc"
+    android:initialLayout="@layout/glance_default_loading_layout"
+    android:maxResizeHeight="@dimen/pill_deck_max_resize_height"
+    android:maxResizeWidth="@dimen/pill_deck_max_resize_width"
+    android:minHeight="@dimen/pill_deck_min_height"
+    android:minResizeHeight="@dimen/pill_deck_min_resize_height"
+    android:minResizeWidth="@dimen/pill_deck_min_resize_width"
+    android:minWidth="@dimen/pill_deck_min_width"
+    android:previewImage="@drawable/album_art_neon_pulse_1794518100522"
+    android:resizeMode="horizontal|vertical"
+    android:targetCellHeight="@integer/pill_deck_target_cell_height"
+    android:targetCellWidth="@integer/pill_deck_target_cell_width"
+    android:updatePeriodMillis="1800000"
+    android:widgetCategory="home_screen|keyguard" />

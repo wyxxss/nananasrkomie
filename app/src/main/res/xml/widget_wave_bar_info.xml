@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/widget_wave_bar_desc"
+    android:initialLayout="@layout/glance_default_loading_layout"
+    android:maxResizeHeight="@dimen/wave_bar_max_resize_height"
+    android:maxResizeWidth="@dimen/wave_bar_max_resize_width"
+    android:minHeight="@dimen/wave_bar_min_height"
+    android:minResizeHeight="@dimen/wave_bar_min_resize_height"
+    android:minResizeWidth="@dimen/wave_bar_min_resize_width"
+    android:minWidth="@dimen/wave_bar_min_width"
+    android:previewImage="@drawable/album_art_sunset_tape_1794518100396"
+    android:resizeMode="horizontal|vertical"
+    android:targetCellHeight="@integer/wave_bar_target_cell_height"
+    android:targetCellWidth="@integer/wave_bar_target_cell_width"
+    android:updatePeriodMillis="1800000"
+    android:widgetCategory="home_screen|keyguard" />

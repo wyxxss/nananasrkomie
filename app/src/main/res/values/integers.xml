@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="vinyl_bloom_target_cell_width">2</integer>
+    <integer name="vinyl_bloom_target_cell_height">2</integer>
+
+    <integer name="pill_deck_target_cell_width">4</integer>
+    <integer name="pill_deck_target_cell_height">2</integer>
+
+    <integer name="clover_target_cell_width">2</integer>
+    <integer name="clover_target_cell_height">2</integer>
+
+    <integer name="wave_bar_target_cell_width">4</integer>
+    <integer name="wave_bar_target_cell_height">1</integer>
+</resources>
